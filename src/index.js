@@ -10,8 +10,8 @@ const websocket = require('./websocket');
 // CORS configuration
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://finport-frontend.onrender.com', 'https://finport-unbk.onrender.com']
-    : process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:3000'],
+    ? ['https://finport-frontend.onrender.com', 'https://finport-unbk.onrender.com', 'http://localhost:3000']
+    : process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:5173'],
   credentials: true,
   optionsSuccessStatus: 200
 };
