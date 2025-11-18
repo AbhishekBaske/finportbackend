@@ -32,8 +32,11 @@ app.get('/health', (req, res) => {
 });
 
 // User OTP routes
+
 const userRoutes = require('./routes/userRoutes');
+const stockRoutes = require('./routes/stockRoutes');
 app.use('/api/user', userRoutes);
+app.use('/api/stock', stockRoutes);
 
 // Attach WebSocket
 websocket(http);

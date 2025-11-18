@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
+    "axios": "^1.13.2",
     "bcryptjs": "^3.0.3",
     "chart.js": "^4.5.1",
     "cookie-parser": "^1.4.7",
@@ -23,7 +24,7 @@
     "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
-    "prisma": "^6.19.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "prisma": "^6.19.0"
   }
 }
